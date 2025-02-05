@@ -1,0 +1,5 @@
+name: React Theme
+type: theme
+description: 'A theme that loads React JavaScript libraries, and a basic React application.'
+core_version_requirement: ^10 || ^11
+base theme: olivero
