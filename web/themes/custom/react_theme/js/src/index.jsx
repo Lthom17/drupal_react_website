@@ -1,8 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import App from './App'
 
-// # Example 1: Simple "Hello, World" code
-ReactDOM.render(
-  <h1>Hello there - world!</h1>,
-  document.getElementById('react-app')
-);
+const container = document.getElementById('react-app');
+
+if (container) {
+  const root = createRoot(container);
+  root.render(<App />);
+} else {
+  console.error('Failed to find the root element');
+}
+
+
